@@ -85,12 +85,14 @@ main {
     margin: auto; /* Align images to the left */
     padding: 1rem; /* Add padding to reduce size */
     box-sizing: border-box; /* Ensure padding doesn't affect width */
+
 }
 
 .slideshow-container {
     position: relative;
     max-width: 100%;
     margin: auto;
+
 }
 
 .mySlides {
@@ -104,13 +106,14 @@ main {
 }
 
 .text {
-    color: #f2f2f2;
+    color: white;
     font-size: 1.5rem;
     padding: 1rem;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
+    font-weight: bolder;
 }
 
 .prev, .next {
