@@ -38,15 +38,19 @@
                     <li><strong>Address:</strong> P.O. Box 980, Harugongo Subcounty, Kabarole District</li>
                 </ul>
                 <p>Alternatively, you can fill out the form below and send us an Email:</p>
-                <form action="#">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    <button type="submit">Submit</button>
-                </form>
+                <form action="https://formsubmit.co/wizzcom12@gmail.com" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required placeholder="Name:" autocomplete="off" minlength="2" maxlength="15">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Email Address:" autocomplete="off" minlength="5" maxlength="25">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" placeholder="Write your message:" autocomplete="off" maxlength="500">
+                   
+                    <input type="hidden" name="_subject" value="Busaiga! New Email">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://wizcom12.github.io/busaiga/thankyou.html">
+                    <button type="submit">Send</button>
+                  </form>
             </div>
         </section>
     </main>
@@ -55,7 +59,7 @@
         <div class="container">
             <p><strong>Location:</strong> P.O. Box 980, Harugongo Subcounty, Kabarole District</p>
             <p>&copy; 2024 BUSAIGA SACCO. All rights reserved.</p>
-            <p><strong>Powered by:</strong>  <a href="https://wa.me/+256784829845" target="_blank">Ig Digital Solutionss</a> 
+            <p><strong>Powered by:</strong>  <a href="https://wa.me/+256784829845" target="_blank">Ig Digital Solutions</a> 
                 <p> <strong>Developed by:</strong> <a href="https://wa.me/+256779491167" target="_blank">Wizcom Dev Fort</a></p>
         </div>
     </footer>
