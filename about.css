@@ -1,5 +1,5 @@
-/* styles.css */
-
+   
+    
 /* Reset and Base Styles */
 body {
   font-family: Arial, sans-serif;
@@ -14,13 +14,7 @@ h2 {
   color: #002060; /* Match heading color */
 }
 
-.container {
-  max-width: 1000px;
-  
-  padding: 20px;
-  align-items: left
-  ;
-}
+
 
 /* Header Styles */
 header {
@@ -55,24 +49,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main Content Styles */
-main {
-  padding-top: 50px;
-  flex: 1;
-}
 
-section {
-  margin-bottom: 50px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
 
 /* Footer Styles */
 footer {
@@ -197,5 +174,121 @@ footer a:hover {
 
   .sidebar {
       display: none; /* Hide sidebar on large screens */
+  }
+}
+
+
+.container {
+  max-width: 1000px;
+  padding: 20px;
+  align-items: left;
+}
+
+/* Main Content Styles */
+main {
+  padding-top: 0; /* No padding needed */
+  flex: 1;
+  background-color: #f0f0f0; /* Example background color for main content */
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #004080;
+  width: 250px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar-content {
+  padding-top: 60px; /* Adjusted padding top */
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 16px;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #004080;
+}
+
+.active {
+  background-color: #004080;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  overflow-x: auto; /* Enable horizontal scroll on smaller screens */
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #004080; /* Header background color */
+  color: white;
+}
+
+/* Alternate row colors for better readability */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray */
+}
+
+/* Colors for header cells */
+th {
+  background-color: #004080; /* Dark blue */
+  color: white;
+}
+
+/* Colors for data cells */
+td {
+  background-color: #ffffff; /* White */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  th, td {
+    min-width: 120px;
   }
 }
