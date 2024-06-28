@@ -279,6 +279,29 @@ th {
 td {
   background-color: #ffffff; /* White */
 }
+/* Styling for Mastulla Kusemererwa's image */
+.management img {
+    width: 100%; /* Ensures the image fills its container */
+    max-width: 300px; /* Example maximum width */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    margin-bottom: 20px; /* Optional: Creates space below the image */
+}
+
+/* Styling for CEO images */
+.images-section img {
+    width: 100%; /* Ensures the image fills its container */
+    max-width: 300px; /* Example maximum width */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    margin-bottom: 20px; /* Optional: Creates space below the image */
+}
+
+/* Optional: Center the images and add space around them */
+.images-section div {
+    text-align: center; /* Centers the images */
+    margin-bottom: 40px; /* Creates space between image sections */
+}
 
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
