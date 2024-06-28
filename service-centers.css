@@ -163,7 +163,8 @@ nav a:hover {
 /* Main Styles */
 main {
   padding-top: 50px;
-  flex: 1;
+  flex: 1
+  background-color: #f0f0f0;
 }
 
 section {
