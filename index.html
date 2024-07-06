@@ -3,77 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404  Error! </title>
+    <title>BUSAIGA SACCO</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        
-        body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.container {
-    text-align: center;
-}
-
-.error-box {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.error-title {
-    font-size: 72px;
-    color: #e74c3c;
-    margin: 0;
-}
-
-.error-message {
-    font-size: 24px;
-    color: #333;
-}
-
-.error-url {
-    font-size: 16px;
-    color: #888;
-    margin: 20px 0;
-}
-
-.home-link {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.home-link:hover {
-    background-color: #2980b9;
-}
-
-    </style>
+    <script src="scripts.js" async defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="error-box">
-            <h1 class="error-title">Error 404</h1>
-            <p class="error-message">No hosting found at the specified URL.</p>
-            <p class="error-url" id="error-url"></p>
-            <a href="/" class=">Refresh The Page </a>
+    <header>
+        <div class="container">
+            <img src="logo.jpg" alt="BUSAIGA SACCO Logo" class="logo">
+            <nav>
+                <div class="menu-icon" onclick="toggleSidebar()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-links">
+                    <a href="about.html">About Us</a>
+                    <a href="savings.html">Savings Products</a>
+                    <a href="loans.html">Loan Products</a>
+                    <a href="mobile.html">Mobile Transactions</a>
+                    <a href="service-centers.html">Service Centers</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-content">
+                        <a href="about.html">About Us</a>
+                        <a href="savings.html">Savings Products</a>
+                        <a href="loans.html">Loan Products</a>
+                        <a href="mobile.html">Mobile Transactions</a>
+                        <a href="service-centers.html">Service Centers</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="slideshow-container">
+                <h1 class="welcome-heading">Welcome to BUSAIGA SACCO</h1>
+                <div class="mySlides fade">
+                    <img src="office.jpg" alt="Slide 1" loading="lazy">
+                    <div class="text">Welcome to BUSAIGA SACCO</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="agric.jpg" alt="Slide 2" loading="lazy">
+                    <div class="text">Your Agriculture partner</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="school.jpg" alt="Slide 3" loading="lazy">
+                    <div class="text">Empowering Education</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="boda3.jpg" alt="Slide 4" loading="lazy">
+                    <div class="text">Ride as you Pay</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="emergency.jpg" alt="Slide 5" loading="lazy">
+                    <div class="text">Solve Your uncertainty</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="home.jpg" alt="Slide 5" loading="lazy">
+                    <div class="text">Improve your Home</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="intro">
+                <h2>Welcome to BUSAIGA SACCO</h2>
+                <p>BUSAIGA SACCO is your trusted financial partner, dedicated to providing a wide range of financial services to empower our members and the community. Join us and enjoy the benefits of savings, loans, and more, tailored to meet your needs.</p>
+            </div>
+        </section>
+        
+        <section class="highlights">
+            <div class="container">
+                <div class="highlight-carousel">
+                    <div class="highlight">
+                        <h2>Savings Products</h2>
+                        <p>Flexible savings accounts to suit your needs.</p>
+                        <a href="savings.html" class="cta">Learn More</a>
+                    </div>
+                    <div class="highlight">
+                        <h2>Loan Products</h2>
+                        <p>Affordable loans with low interest rates.</p>
+                        <a href="loans.html" class="cta">Learn More</a>
+                    </div>
+                    <div class="highlight">
+                        <h2>Partnership</h2>
+                        <p>Partner with BUSAIGA SACCO and enjoy numerous benefits.</p>
+                        <a href="contact.html" class="cta">Learn More</a>
+                    </div>
+                    <!-- Add more highlights as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Location: P.O. Box 980, Harugongo Subcounty, Kabarole District</p>
+            <p>&copy; 2024 BUSAIGA SACCO. All rights reserved.</p>
+            <p>Powered by <a href="https://wa.me/" target="_blank">Busaiga SACCO</a> | Developed by <a href="https://wa.me/+256784829845" target="_blank">IG Digital Solutions/Wizcom</a></p>
+        </div>
+    </footer>
+
     <script>
-        // You can dynamically set the error URL here if needed
-        document.getElementById('error-url').innerText = window.location.href;
+        function toggleSidebar() {
+            document.querySelector('.dropdown-content').classList.toggle('active');
+        }
+
+        document.querySelectorAll('.dropdown-content a').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelector('.dropdown-content').classList.remove('active');
+            });
+        });
     </script>
 </body>
 </html>
